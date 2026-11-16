@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCO / Escola Paraná - Acesso</title>
+    <style>
+        /* Reset básico e Tipografia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho Institucional (Header) */
+        header {
+            background-color: #004a8d; /* Azul institucional */
+            color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 0.8rem;
+            font-weight: normal;
+            display: block;
+            opacity: 0.8;
+        }
+
+        /* Navegação Principal (Nav) */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal (Main) */
+        main {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Seção de Boas-Vindas / Hero */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .hero h2 {
+            color: #004a8d;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Grid de Acesso (Cards) */
+        .acesso-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #004a8d;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #004a8d;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Botões de Ação */
+        .btn {
+            display: inline-block;
+            background-color: #004a8d;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #003366;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #004a8d;
+            border: 2px solid #004a8d;
+        }
+
+        .btn-outline:hover {
+            background-color: #004a8d;
+            color: #fff;
+        }
+
+        /* Rodapé (Footer) */
+        footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>RCO / Escola Paraná <span>Secretaria da Educação do Paraná</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Alunos</a></li>
+                    <li><a href="#">Professores</a></li>
+                    <li><a href="#">Tutoriais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Boas-vindas -->
+        <section class="hero">
+            <h2>Bem-vindo ao Portal de Serviços</h2>
+            <p>Acesse o Registro de Classe On-line (RCO) e o aplicativo Escola Paraná. Ferramentas essenciais para o acompanhamento pedagógico e gestão escolar na rede estadual de ensino.</p>
+        </section>
+
+        <!-- Cards de Acesso -->
+        <section class="acesso-grid">
+            <!-- Card Alunos -->
+            <article class="card">
+                <h3>📱 Escola Paraná Alunos</h3>
+                <p>Destinado a estudantes e responsáveis. Acompanhe frequência, notas, boletim e avisos escolares diretamente pelo celular.</p>
+                <a href="#" class="btn">Acessar como Aluno</a>
+            </article>
+
+            <!-- Card Professores -->
+            <article class="card">
+                <h3>💻 Registro de Classe (RCO)</h3>
+                <p>Área exclusiva para docentes da rede estadual. Realize o registro de frequência, planos de aula e lançamento de notas.</p>
+                <a href="#" class="btn">Acessar RCO</a>
+            </article>
+
+            <!-- Card Suporte / Tutoriais -->
+            <article class="card">
+                <h3>❓ Ajuda e Tutoriais</h3>
+                <p>Consulte manuais, vídeos explicativos e tire dúvidas sobre o uso das plataformas RCO e Escola Paraná.</p>
+                <a href="#" class="btn btn-outline">Ver Tutoriais</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Secretaria de Estado da Educação do Paraná - SEED/PR</p>
+        <p>Este é um modelo demonstrativo baseado nos serviços oficiais. Para acesso real, utilize os canais oficiais do governo.</p>
+    </footer>
+
+</body>
+</html>
